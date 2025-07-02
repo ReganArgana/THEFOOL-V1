@@ -58,7 +58,7 @@ const alatList = [
 
 const toko = {
   alat: alatList,
-  umpan: { nama: "Umpan", harga: 10 }
+  umpan: { nama: "Umpan", harga: 25 }
 };
 
 async function registerCommands() {
@@ -98,10 +98,10 @@ function mancing(user) {
   const peluang = Math.random() * 100 + bonus;
   let tangkapan;
 
-  if (peluang > 95) tangkapan = ikanList.find(i => i.rarity === "mythical");
-  else if (peluang > 85) tangkapan = ikanList.find(i => i.rarity === "legendary");
+  if (peluang > 10) tangkapan = ikanList.find(i => i.rarity === "mythical");
+  else if (peluang > 35) tangkapan = ikanList.find(i => i.rarity === "legendary");
   else if (peluang > 65) tangkapan = ikanList.find(i => i.rarity === "rare");
-  else if (peluang > 40) tangkapan = ikanList.find(i => i.rarity === "uncommon");
+  else if (peluang > 80) tangkapan = ikanList.find(i => i.rarity === "uncommon");
   else tangkapan = ikanList[Math.floor(Math.random() * 4)];
 
   const berat = Math.floor(Math.random() * 100) + 1;
