@@ -1,3 +1,19 @@
 {
-  "users": {}
+  "users": {
+    "123456789012345678": {
+      "uang": 1000,
+      "ikan": [],
+      "umpan": 3,
+      "alat": "Alat Pancing Biasa"
+    },
+    "987654321098765432": {
+      "uang": 800,
+      "ikan": [
+        { "nama": "Ikan Lele", "kg": 30 },
+        { "nama": "Ikan Paus", "kg": 90 }
+      ],
+      "umpan": 1,
+      "alat": "Alat Pancing Super Rare"
+    }
+  }
 }
