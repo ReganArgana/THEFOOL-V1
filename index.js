@@ -98,10 +98,10 @@ function mancing(user) {
   const peluang = Math.random() * 100 + bonus;
   let tangkapan;
 
-  if (peluang > 1000) tangkapan = ikanList.find(i => i.rarity === "mythical");
-  else if (peluang > 500) tangkapan = ikanList.find(i => i.rarity === "legendary");
-  else if (peluang > 350) tangkapan = ikanList.find(i => i.rarity === "rare");
-  else if (peluang > 80) tangkapan = ikanList.find(i => i.rarity === "uncommon");
+  if (peluang > 0.1) tangkapan = ikanList.find(i => i.rarity === "mythical");
+  else if (peluang > 0.5) tangkapan = ikanList.find(i => i.rarity === "legendary");
+  else if (peluang > 5) tangkapan = ikanList.find(i => i.rarity === "rare");
+  else if (peluang > 20) tangkapan = ikanList.find(i => i.rarity === "uncommon");
   else tangkapan = ikanList[Math.floor(Math.random() * 4)];
 
   const berat = Math.floor(Math.random() * 100) + 1;
